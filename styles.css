@@ -50,12 +50,12 @@ header {
 
 /* Estilos para la imagen del logotipo */
 .logo-section img {
-    width: 45%; /* Tamaño de la imagen del logotipo (ajusta según tu diseño) */
-    margin-top: -1em; /* Elimina el margen superior */
+    width: 30%; /* Tamaño de la imagen del logotipo (ajusta según tu diseño) */
+    margin-top: -0.5em; /* Elimina el margen superior */
     margin-bottom: 0; /* Elimina el margen inferior */
     margin-right: 0; /* Elimina el margen derecho */
-    margin-left: -8em; /* Elimina el margen izquierdo */
-    border-radius: 35em; /* Borde redondeado de la imagen */
+    margin-left: -5em; /* Elimina el margen izquierdo */
+    border-radius: 50em; /* Borde redondeado de la imagen */
 }
 /* Estilos para la lista de navegación */
 nav ul {
