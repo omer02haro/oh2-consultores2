@@ -1,0 +1,936 @@
+/* ++++++++++++++++++++++++++++Estilos generales ultimo formato ++++++++++++++++++++++++++*/
+head {
+    width: 100%;
+    }
+body {
+    
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+
+    .hero {
+        width: 100%;
+    }
+    body {        
+        width: 100%;
+    }
+}
+
+/* +++++++++++++++++++++++++++Estilos para el encabezado+++++++++++++++++++++++++++++ */
+
+header {
+    background-color: #000000; /* Color de fondo del encabezado (ajusta según tu diseño) */
+    color: #fff; /* Color del texto del encabezado (ajusta según tu diseño) */
+    padding: 17px 0; /* Espaciado interno del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Posiciona el encabezado en la parte superior de la ventana del navegador */
+    width: 100%; /* Ancho completo del encabezado */
+    height: 1.5em;
+    z-index: 1000; /* Prioridad del encabezado para que esté por encima del contenido */
+}
+
+/* Estilos para el contenedor del encabezado */
+.containerinicio {
+    display: flex; /* Usa un modelo de caja flexible para el diseño */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    
+    width: 80%; /* Ancho del contenedor del encabezado (ajusta según tu diseño) */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: -0.6em;
+}
+
+/* Estilos para la sección del logotipo */
+.logo-section {
+    display: flex; /* Usa un modelo de caja flexible para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: -0.3em;
+
+}
+
+/* Estilos para la imagen del logotipo */
+.logo-section img {
+    height: 20%;
+    width: 45%; /* Tamaño de la imagen del logotipo (ajusta según tu diseño) */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    margin-right: 2em; /* Elimina el margen derecho */
+    margin-left: -9em; /* Elimina el margen izquierdo */
+    border-radius: 6em; /* Borde redondeado de la imagen */
+}
+/* Estilos para la lista de navegación */
+nav ul {
+    display: flex; /* Usa un modelo de caja flexible para la lista */
+    gap: 4em; /* Espacio entre elementos de la lista */
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    
+}
+
+/* Estilos para cada elemento de la lista de navegación */
+nav ul li {
+    margin: 0.1px 0; /* Espacio vertical entre elementos de la lista */
+}
+
+/* Estilos para los enlaces de la lista de navegación */
+nav ul li a {
+    color: #fff; /* Color del texto de los enlaces (ajusta según tu diseño) */
+    text-decoration: #fff; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Peso de la fuente de los enlaces (ajusta según tu diseño) */
+    margin-top:02em; /* Elimina el margen superior */
+    padding-top: 0em; /* Elimina el relleno superior */
+}
+
+
+
+
+/*menu*/
+
+#check {
+    display: none;
+}
+ .checkbtn {
+    font-size: 30px;
+    color: #c02727;
+    float: right;
+    line-height: 50px;
+    margin-right: -50px;
+    cursor: pointer;
+    display: none;
+
+ }
+
+
+ 
+ /*MEDIA QUERIES */
+ /*ESTILOS PARA PANTALLAS MAS PEQUEÑAS*/
+ @media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 2%;
+    }
+    .logo-section img {
+        height: 20%;
+        width: 45%; /* Tamaño de la imagen del logotipo (ajusta según tu diseño) */
+        margin-bottom: 0; /* Elimina el margen inferior */
+        margin-right: 2em; /* Elimina el margen derecho */
+        margin-left: 0em; /* Elimina el margen izquierdo */
+        margin-top: -4em;
+        border-radius: 6em; /* Borde redondeado de la imagen */
+    }
+    .checkbtn {
+        display: block;
+    }
+    #containerinicio nav-links {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0056b3;
+        text-align: center;
+
+        top: 80PX;
+        left: 100%;
+        transition: all 0.5s;
+        
+    }
+
+    #check:checked ~ ul {
+        left:0%;
+        display: block;
+    }
+
+    /* Estilos para cada elemento de la lista de navegación */
+    #containerinicio nav ul li {
+        display: block;
+        margin: 50px 0; /* Espacio vertical entre elementos de la lista */
+        list-style: 30px;
+    }
+
+    /* Estilos para los enlaces de la lista de navegación */
+    #containerinicio nav ul li a {
+        font-size: 20px;
+    }
+
+    
+}
+
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++ CUERPO ++++++++++++++++++++++++++++++++++++++++++*/
+.hero {
+    background-image: url('imagenes/hero-background.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    padding: 1px 0;
+    display: flex;
+    align-items: center; /* Para alinear verticalmente */
+    width: 100%;
+    height: 40em;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-position: center top; /* Ajusta la posición de la imagen de fondo */
+    transition: background-image 1s ease, background-position 1s ease; /* Transición suave para la imagen de fondo y su posición */
+    mask-image: linear-gradient(white 88%,
+    transparent
+    );
+}/* Estilos generales */
+
+.containercuerpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5%;
+}
+
+
+.hero-content {
+    width: 75%; /* 75% del ancho */
+    margin-left: 9em; /* Centrar horizontalmente */
+    margin-right:11em; /* Centrar horizontalmente */
+    padding: 0px; /* Añade un espacio interior */
+    background-color: #f0f0f061; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.hero-text {
+    text-align: center; /* Alinear texto al centro */
+}
+
+.hero-text h2 {
+    font-size: 35px; /* Tamaño del texto del encabezado */
+    color: #060606; /* Color del texto del encabezado */
+    font-family: 'Playfair Display', serif; /* Fuente de Google Fonts */
+}
+
+.hero-text p {
+    font-size: 18px; /* Tamaño del texto del párrafo */
+    color: #141313; /* Color del texto del párrafo */
+    line-height: 1.5; /* Altura de línea */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* FORMULARIO DE CORREO*/
+.contact-form {
+    width: 25%; /* 25% del ancho */
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    margin-right: 1em;
+}
+
+
+
+/* Agregar una clase adicional para controlar la opacidad */
+.hero.fade-out {
+    opacity: 0; /* Establecer la opacidad a 0 */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* ++++++++++++++++++++++++++Estilos del formulario de contacto++++++++++++++++++ */
+.contact-form {
+    width: 30%; /* Ajusta según sea necesario */
+    background-color: rgba(0, 110, 255, 0.349);
+    padding: 20px 25px; /* Ajusta el espacio superior e inferior */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: center; /* Para centrar horizontalmente */
+    justify-content: center; /* Para centrar verticalmente */
+    height: 425px;
+    margin-bottom: -4%; /* Reducir la distancia inferior */
+}
+
+
+.contact-form > div {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: 10px 0; /* Ajusta el espacio vertical entre los elementos */
+}
+
+.contact-form form {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    
+}
+
+.contact-form form .form-group {
+    margin-bottom: 10px; /* Espacio entre grupos de formulario */
+    display: flex; /* Utiliza flexbox para alinear y centrar los elementos */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+
+
+}
+
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    width: calc(100% - 30px); /* Ancho completo menos el ancho de los bordes */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-form form textarea {
+    height: 80px; /* Altura fija */
+    max-height: 80px; /* Altura máxima */
+    resize: vertical; /* Permitir cambio vertical */
+}
+#message {
+    font-style: italic; /* Estilo de fuente en cursiva */
+    line-height:1; /* Altura de línea */
+    height: 80em;
+    border: 1px solid #ccc; /* Borde del área de texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.contact-form form button {
+    display: block;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form form button:hover {
+    background-color: #555;
+    align-items: center; /* Para centrar horizontalmente */
+}
+
+
+/* Media query para pantallas de teléfono */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50%; /* Reduce la altura del héroe en pantallas de teléfono */
+    }
+
+    .containercuerpo {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna */
+    }
+
+    .hero-content {
+        width: 80%; /* Ajusta el ancho al 100% para que ocupe todo el espacio disponible */
+        margin-left: 6.5em; /* Elimina el margen izquierdo en pantallas de teléfono */
+        margin-right: 6.5em; /* Elimina el margen derecho en pantallas de teléfono */
+        margin-top: 90px; /* Agrega un margen superior en pantallas de teléfono */
+        margin-bottom: 40px; /* Agrega un margen inferior en pantallas de teléfono */
+    }
+
+    .contact-form {
+        width: 70%; /* Ajusta el ancho al 80% en pantallas de teléfono */
+        height: 20%;
+        
+        margin-left: 6.5em; /* Centra el formulario horizontalmente */
+        margin-right: 6.5em; /* Centra el formulario horizontalmente */
+        margin-top: 20px; /* Agrega un margen superior en pantallas de teléfono */
+        margin-bottom: 45px; /* Agrega un margen inferior en pantallas de teléfono */
+        padding: 10px; /* Agrega un relleno interno al formulario */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*++++++++++++++++++++recursos utiles de implementacion+++++++++++++++++++++++++++++++++++++++*/
+
+
+.recursos {
+    height: auto; /* Cambiado a automático para ajustarse al contenido */
+    width: 90%; /* Ancho del 90% del contenedor padre */
+   
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar elementos horizontalmente */
+    margin-top: 5px; /* Espacio en la parte superior */
+    margin-bottom: 2px;
+    padding: 20px; /* Espacio interno */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0)); /* Degradado transparente */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 40px rgba(12, 12, 12, 0.1); /* Sombra */
+}
+
+.titulo {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left; /* Alinear texto al centro */
+    font-weight: bold; /* Hacer el título en negrita */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    margin-left: 3em; /* Margen a la izquierda */
+}
+
+/* Estilos de cada recurso */
+
+.recurso {
+    text-align: center; /* Alinear el contenido al centro */
+    margin: 0 10px 20px; /* Ajuste de margen */
+    width: 150px; /* Ancho de cada recurso */
+    flex-grow: 1; /* Permitir que los elementos se expandan */
+    position: relative; /* Posición relativa para sombra */
+}
+
+.recurso img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    margin-bottom: 1px; /* Espacio entre la imagen y el párrafo */
+    transition: box-shadow 0.3s ease; /* Transición de la sombra */
+}
+
+/* Efecto de sombra al pasar el cursor sobre la imagen */
+.recurso:hover img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); /* Sombras al deslizar el cursor */
+}
+
+.recurso p {
+    transition: transform 0.3s ease; /* Transición de la animación */
+}
+
+/* Efecto de animación al pasar el cursor sobre el texto */
+.recurso:hover p {
+    transform: translateY(-7px); /* Mover texto hacia arriba al deslizar el cursor */
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .recursos {
+        margin: 3px 10px; /* Ajusta el margen para adaptarse a pantallas más pequeñas */
+    }
+
+    .titulo {
+        font-size: 2em;
+        margin-left: 0; /* Elimina el margen a la izquierda */
+        text-align: center; /* Centra el título */
+        margin: 10%;
+    }
+
+    .recurso {
+        width: 100%; /* Ancho completo */
+        margin: 0 auto 20px; /* Centra horizontalmente y agrega espacio inferior */
+    }
+
+    .recurso img {
+        width: 35%; /* Reduce el tamaño de la imagen */
+        height: 75%; /* Reduce el tamaño de la imagen */
+    }
+    /* Efecto de sombra al pasar el cursor sobre la imagen */
+    .recurso:hover img {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); /* Sombras al deslizar el cursor */
+    }
+
+    .recurso p {
+        transition: transform 0.3s ease; /* Transición de la animación */
+    }
+
+    /* Efecto de animación al pasar el cursor sobre el texto */
+    .recurso:hover p {
+        transform: translateY(-7px); /* Mover texto hacia arriba al deslizar el cursor */
+    }
+}
+
+/*++++++++++++++++++++++++++++++SERVICIOS PARA TU EMPRESA++++++++++++++++++++++++++++++++++++*/
+
+
+.tools {
+    background-image: url('imagenes/hero-background.jpg');
+    height: auto; /* Altura */
+    padding: 2px 0; /* Espacio interno */
+    border-top: 1px solid rgba(255, 255, 255, 0.5); /* Borde superior degradado */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Borde inferior degradado */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    transition: background-image 0.5s ease; /* Transición suave */
+
+}
+
+
+.tools h2 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto (blanco) */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+
+
+.tool-columns {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilo para cada columna de herramienta */
+.tool-column {
+        height: auto;
+    background-color: #ffffff;
+    flex-basis: 22%; /* Tamaño base de la columna */
+    padding: 2px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    border: 1px solid #ccc; /* Borde delgada sólido de color gris */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.4); /* Sombra oscura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo para las imágenes dentro de las columnas */
+.tool-column img {
+    width: 100%; /* Ancho completo */
+    height: 150px; /* Altura fija */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Pseudo-elemento para el efecto de fondo */
+.tool-column::before {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Alineado arriba */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-size: cover; /* Tamaño de fondo cubrir */
+    background-position: center; /* Posición de fondo centrada */
+    transition: transform 0.5s ease; /* Transición suave */
+    z-index: -1; /* Colocado detrás del contenido */
+}
+
+/* Espacio inferior para separar las columnas */
+.tool-column {
+    margin-bottom: 20px; /* Espacio entre columnas */
+}
+
+
+
+/* Estilo para el título de cada columna */
+.tool-column h3 {
+    margin-bottom: 0.01px; /* Espacio entre título y párrafo */
+    font-size: auto; /* Tamaño de fuente relativo */
+}
+
+/* Estilo para el párrafo de cada columna */
+.tool-column p {
+    text-align: justify; /* Justificar texto */
+    margin: 5%;
+    font-size: 0.8em; /* Tamaño de fuente relativo */
+}
+
+/* Transición suave al pasar el cursor sobre el enlace */
+.tool-column a {
+    transition: transform 0.3s ease; /* Transición suave */
+    font-size: 1em; /* Tamaño de fuente relativo */
+}
+
+
+
+
+
+/* Cambio de color y elevación al pasar el cursor sobre la columna */
+.tool-column:hover {
+    transform: translateY(-35px); /* Elevación al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.5); /* Sombra más oscura al pasar el cursor */
+}
+
+/* Cambio de color y tamaño al pasar el cursor sobre el enlace */
+.tool-column a:hover {
+    color: rgba(6, 10, 34, 0.8); /* Cambio de color al pasar el cursor */
+    transform: translateY(-50px) scale(0.8); /* Mover hacia arriba y reducir tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.5); /* Sombra más oscura al pasar el cursor */
+}
+
+
+
+
+
+
+/* Media query para pantallas de teléfono */
+@media screen and (max-width: 768px) {
+    .tools {
+        height: auto; /* Ajusta la altura automáticamente en pantallas de teléfono */
+        padding: 10px 0; /* Ajusta el espacio interno */
+    }
+
+    .tool-columns {
+        flex-direction: column; /* Cambia la dirección de las columnas a columna */
+    }
+
+    .tool-column {
+        width: auto; /* Ocupa todo el ancho disponible */
+        height: auto;
+        margin-bottom: 20px; /* Agrega un margen inferior */
+        padding: 5px; /* Ajusta el espacio interno */
+    }
+
+    .tool-column img {
+        height: auto; /* Ajusta la altura automáticamente */
+        width: 18sem; /* Ancho máximo */
+    }
+    /* Estilo para el título de cada columna */
+    
+
+    .tool-column h3 {
+        margin-bottom: 0.01px; /* Espacio entre título y párrafo */
+        font-size: em; /* Tamaño de fuente relativo */
+    }
+
+    /* Estilo para el párrafo de cada columna */
+    .tool-column p {
+        text-align: justify; /* Justificar texto */
+        margin: 5%;
+        font-size: 1.5em; /* Tamaño de fuente relativo */
+    }
+
+    /* Transición suave al pasar el cursor sobre el enlace */
+    .tool-column a {
+        
+        font-size: 1.5em; /* Tamaño de fuente relativo */
+    }
+
+    
+}
+
+
+ /*++++++++++++++++++++++++++++++Eventos  próximos+++++++++++++++++++++++++++++++++++++++*/
+ .eventos {
+    width: 70%; /* Anchura del contenedor */
+    height: auto; /* Altura automática */
+    background-color: #ffffff88; /* Color de fondo con opacidad */
+    margin: 50px auto; /* Margen superior 50px y laterales automáticos */
+}
+
+.titulo h2 { 
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el margen horizontal */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.1em; /* Tamaño de fuente */
+    justify-content: left; /* Alinea el contenido a la izquierda */
+}
+
+.titulo p { /* Selector corregido para los elementos p dentro de .titulo */
+    font-size: 0.7em; /* Tamaño de fuente */
+    margin: 0; /* Elimina el margen horizontal */
+    font-weight: normal; /* Quita la negrita */
+}
+
+.contenido-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex;
+    height: 20%; /* Altura del contenedor */
+
+}
+
+.contenido-eventos .evento {
+    flex: 1; /* Flex-grow, flex-shrink, flex-basis */
+    margin: auto; /* Margen automático para centrar horizontalmente */
+}
+.eventos .evento {
+    background-image: url('Imagenes/su-imagen.jpg');
+    background-size: 100%; /* Reducir la escala de la imagen al 50% */
+    width: 300px;
+    margin: 0 20px 20px 0;
+    padding: 20px;
+    border-radius : 80px solid #ccc;
+}
+
+.eventos .evento h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.eventos .evento p {
+    margin-bottom: 10px;
+}
+
+.eventos .evento a {
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.eventos .evento a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .titulo {
+        width: 60%;
+        text-align: center;
+    }
+    .tool-columns {
+        flex-direction: column; /* Cambia la dirección de la fila a columna */
+        align-items: center; /* Centra las columnas horizontalmente */
+    }
+
+    .tool-column {
+        flex-basis: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre columnas */
+    }
+
+    .tool-column img {
+        width: 80%; /* Ancho del 80% para adaptarse a la pantalla */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+}
+
+
+
+
+/*++++++++++++++++++++++++++CLIENTES SATISFECHOS++++++++++++++++++++++++++++++++++++++++++ */
+
+.clients {
+    background-color: #fcfcfc;
+    padding: 10px 0;
+}
+
+
+/* Estilo del contenedor de testimonios */
+.client-testimonials {
+    display: flex;
+    gap: 20px; /* Espacio entre testimonios */
+    overflow-x: auto; /* Hace que la barra de desplazamiento aparezca automáticamente cuando el contenido se desborda */
+    scroll-snap-type: x mandatory; /* Hace que el desplazamiento se detenga en cada testimonio */
+    padding: 16px; /* Añade un poco de espacio para la barra de desplazamiento */
+    -webkit-overflow-scrolling: touch; /* Hace que el desplazamiento sea suave en dispositivos iOS */
+    position: relative; /* Añadir posición relativa */
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0)); /* Degradado blanco en los lados */
+    transition: background-color 0.3s; /* Transición al pasar el cursor */
+}
+
+
+
+/* Estilo de la barra de desplazamiento */
+.client-testimonials::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de desplazamiento */
+    
+}
+
+.client-testimonials::-webkit-scrollbar-thumb {
+    background-color: #999; /* Color del botón de la barra de desplazamiento */
+    border-radius: 15px; /* Añadir radios a las esquinas del botón */
+}
+
+.client-testimonials::-webkit-scrollbar-thumb:hover {
+    background-color: #5259d4; /* Color del botón de la barra de desplazamiento al pasar el cursor */
+}
+
+/* Estilo de cada testimonio individual */
+.client-testimonial {
+    min-width: 260px; /* Ancho mínimo de cada testimonio */
+    height: 18em;
+    background-color: #eceef2bc;
+    border-radius: 10px;
+    padding: 8px;
+    scroll-snap-align: start; /* Hace que cada testimonio esté alineado con el borde del contenedor de testimonios */
+    animation: fadeIn 1s ease-in-out; /* Animación de fade-in */
+}
+
+/* Estilo del título del testimonio */
+.client-testimonial h3 {
+    margin-bottom: 1.8em;
+    font-size: 20px; /* Tamaño de fuente reducido a 12px */
+    font-weight: bold; /* Texto en negrita */
+    font-family: Arial, sans-serif; /* Cambio de fuente de letra */
+    color: #333;
+    text-align: center; /* Justificar el texto */
+    
+}
+
+/* Estilo del texto del testimonio */
+.client-testimonial p  {
+    margin: 0;
+    font-size: 17px; /* Tamaño de fuente reducido a 14px */
+    color: #333;
+    text-align: center; /* Justificar el texto */
+}
+
+/* Estilo del título del testimonio */
+.client-testimonial h3 {
+    position: relative; /* Agregar posición relativa para posicionar las estrellas */
+}
+
+/* Estilo de las estrellas */
+.client-testimonial h3::after {
+    content: " ⭐⭐⭐⭐⭐"; /* Agregar estrellas al final del título */
+    font-size: 14px;
+    position: absolute;
+    bottom: -3.5em; /* Posicionar las estrellas debajo del título */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Alinear el centro de las estrellas con el centro del título */
+    margin-bottom: 30px; /* Agregar espacio inferior */
+}
+
+/* Estilo del último párrafo de cada testimonio */
+.client-testimonial p:last-child {
+    font-style: italic; /* Cambiar el estilo del último párrafo a cursiva */
+    color: #080606; /* Cambiar el color del texto */
+    margin-top: 8px; /* Agregar espacio superior */
+    font-family: Arial, sans-serif; /* Cambio de fuente de letra */
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50spx);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*++++++++++++++++++++++++++ WATSSAPPPPP+++++++++++++++++++++++++++++++++ */
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+.whatsapp-icon {
+    position: fixed; /* Fija la posición del icono */
+    bottom: 35px; /* Distancia desde la parte inferior de la pantalla */
+    right: 70px; /* Distancia desde el borde derecho de la pantalla */
+    z-index: 1000; /* Asegura que el icono esté por encima del contenido */
+    animation: bounce 2s infinite; /* Aplica la animación de rebote */
+}
+
+.whatsapp-icon img {
+    width: 60px; /* Ajusta el tamaño del icono */
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para opacidad, sombra y transformación */
+    border-radius: 50%;
+}
+
+.whatsapp-icon img:hover {
+    opacity: 0.8; /* Cambia la opacidad al pasar el cursor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra al icono */
+    animation: none; /* Detiene la animación de rebote al pasar el cursor */
+    transform: scale(2); /* Aumenta la escala del icono al pasar el cursor */
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .whatsapp {
+            display: block; /* Muestra el botón de WhatsApp en pantallas móviles */
+            bottom: 25px; /* Ajusta la distancia desde la parte inferior de la pantalla */
+        }
+    .whatsapp-icon img {
+        width: 80px; /* Ajusta el tamaño del icono para pantallas más pequeñas */
+    }
+
+}
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++PIE DE PAGINA++++++++++++++++++++++++++++++++++++++++++++++++*/
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    justify-content:center
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Alineado vertical */ 
+    }
+
+.footer-content ul{
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.contactosredes {
+    width: 35%;
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente los elementos a lo largo del ancho */
+    margin-bottom: 0px; /* Espacio entre contactosredes y creditos */ 
+}
+
+.contactosredes > div {
+    justify-content: space-between; /* Distribuye uniformemente los elementos a lo largo del ancho */
+    margin: 0 1px; /* Espacio entre elementos de contactosredes */
+}
+
+.creditos {
+    margin-top: 2px; /* Espacio entre contactosredes y creditos */
+}
+
+
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer {
+        width: 70%;
+        flex-direction: column; /* Alineado vertical */
+        padding: 5px 0; /* Reduce el padding en pantallas pequeñas */
+    }
+    
+    .footer-content {
+        flex-direction: column; /* Alineado vertical */
+        font-size: 14px; /* Reduce el tamaño de texto en pantallas pequeñas */
+    }
+
+    .contactosredes {
+        width: 100%;
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al centro en pantallas pequeñas */
+    }
+
+    .contactosredes > div {
+        margin: 5px 0; /* Reduce el espacio entre elementos en pantallas pequeñas */
+    }
+
+    .creditos {
+        font-size: 12px; /* Reduce el tamaño de texto de los créditos en pantallas pequeñas */
+    }
+}
